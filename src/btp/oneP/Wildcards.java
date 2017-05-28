@@ -62,6 +62,21 @@ public class Wildcards {
 		System.out.println(r3);
 		Long r4 = exact1(bounded);
 		System.out.println(r4);
+		
+		Long r5 = exact2(raw,lng);
+		Long r6 = exact2(qualified,lng);
+		//Long r7 = exact2(unbounded,lng);
+		//Long r8 = exact2(bounded,lng);
+		
+		Long r9 = wildSubtype(raw,lng);
+		Long r10 = wildSubtype(qualified,lng);
+		Object r11 = wildSubtype(unbounded,lng);
+		Long r12 = wildSubtype(bounded,lng);
+		
+		wildSupertype(raw,lng);
+		wildSupertype(qualified,lng);
+		//wildSupertype(unbounded,lng);
+		//wildSupertype(bounded,lng);
 	}
 
 }
