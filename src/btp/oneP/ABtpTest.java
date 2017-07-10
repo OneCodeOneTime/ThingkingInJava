@@ -3,6 +3,8 @@ package btp.oneP;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ABtpTest {
@@ -11,13 +13,17 @@ public class ABtpTest {
 		PrintStream p = System.out;
 		Scanner sc =new Scanner(System.in);
 		try{
-			ArrayList as = returnArray();
+			/*ArrayList as = returnArray();
 			ArrayList<String> ass = (ArrayList<String>)as;
 			p.println(ass);
 			as = returnArrayNew();
 			p.println(as);
 			ass = (ArrayList<String>)as;
-			p.println(ass);
+			p.println(ass);*/
+			
+			List myIntList = new LinkedList();//1
+			myIntList.add(new Integer(0));//2
+			Integer x = (Integer) myIntList.iterator().next();//3
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally{
