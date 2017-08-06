@@ -35,7 +35,7 @@ public class ApplyTest {
 			shapeQ.add(new Shape());
 			shapeQ.add(new Square());
 		}
-		Apply.apply(shapeQ, Shape.class.getMethod("rotate"));
+		Apply.apply(shapeQ, ShapeX.class.getMethod("rotate"));
 	}
 
 }
