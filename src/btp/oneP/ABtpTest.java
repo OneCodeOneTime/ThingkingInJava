@@ -6,7 +6,12 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.zip.DeflaterOutputStream;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class ABtpTest {
 
@@ -31,6 +36,13 @@ public class ABtpTest {
 			sc.close();
 			p.close();
 		}
+		
+		AbstractQueuedSynchronizer aqs = null;
+		CountDownLatch cdl = null;
+		Semaphore sp = null;
+		ArrayBlockingQueue bq = null;
+		ReentrantLock lock = null;
+		AtomicInteger ai = null;
 	}
 	
 	public static ArrayList<String> returnArray(){
